@@ -11,12 +11,25 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
         <a class="navbar-brand" href="index.php">Guide Bacheliers</a>
-        <div class="collapse navbar-collapse">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="../pages/accueil.php">Accueil</a></li>
-            <li class="nav-item"><a class="nav-link" href="../pages/orientation.php">Orientation</a></li>
-                <li class="nav-item"><a class="nav-link" href="../pages/conseils.php">Conseils</a></li>
-                <li class="nav-item"><a class="nav-link" href="../pages/contact.php">Contacts</a></li>
+                <?php 
+                $page = basename($_SERVER['PHP_SELF']); // Récupère le nom de la page actuelle
+
+                if ($page == 'index.php') { ?>
+                    <li class="nav-item"><a class="nav-link" href="../pages/register.php">Inscription</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/login.php">Connexion</a></li>
+                <?php } else { ?>
+                    <li class="nav-item"><a class="nav-link" href="../pages/accueil.php">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/orientation.php">Orientation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/conseils.php">Conseils</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/contact.php">Contacts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/profil.php">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/logout.php">Déconnexion</a></li>
+                <?php } ?>
             </ul>
         </div>
     </div>

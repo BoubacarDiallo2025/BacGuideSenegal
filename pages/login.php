@@ -1,4 +1,4 @@
-<?php include '../includes/header.php'; ?>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 <div class="container mt-5">
     <h2>Connexion</h2>
     <form action="traitement_login.php" method="POST">
@@ -7,4 +7,4 @@
         <button type="submit" class="btn btn-primary mt-3">Se connecter</button>
     </form>
 </div>
-<?php include '../includes/footer.php'; ?>
+
