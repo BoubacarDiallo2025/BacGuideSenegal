@@ -13,8 +13,10 @@
         <a class="navbar-brand" href="index.php">Guide Bacheliers</a>
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="pages/orientation.php">Orientation</a></li>
-                <li class="nav-item"><a class="nav-link" href="pages/conseils.php">Conseils</a></li>
+            <li class="nav-item"><a class="nav-link" href="../pages/accueil.php">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="../pages/orientation.php">Orientation</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/conseils.php">Conseils</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/contact.php">Contacts</a></li>
             </ul>
         </div>
     </div>

@@ -66,7 +66,7 @@
                          <p class='card-text'>{$etablissement['adresse']}</p>
                           <p class='card-text'>{$etablissement['email']}</p>
                            <p class='card-text'>{$etablissement['tel']}</p>
-                        <a href='pages/formations.php' class='btn btn-primary'>Voir plus</a>
+                        <a href='orientation.php' class='btn btn-primary'>Voir plus</a>
                     </div>
                 </div>
             </div>";
