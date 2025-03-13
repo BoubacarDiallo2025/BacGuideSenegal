@@ -4,8 +4,8 @@
 <section class="hero bg-primary text-white text-center py-5">
     <div class="container">
         <h1>Bienvenue sur le Guide en Ligne pour les Nouveaux Bacheliers !</h1>
-        <p class="lead">Découvrez les formations disponibles et obtenez des conseils pour votre orientation.</p>
-        <a href="pages/formations.php" class="btn btn-light btn-lg mt-3">Explorer les formations</a>
+        <p class="lead">Découvrez les établissements disponibles et obtenez des conseils pour votre orientation.</p>
+        <a href="orientation.php" class="btn btn-light btn-lg mt-3">Explorer les établissements</a>
     </div>
 </section>
 
@@ -19,7 +19,7 @@
                 avec des conseillers universitaires.</p>
         </div>
         <div class="col-md-6">
-            <img src="assets/img/etudiants.jpg" class="img-fluid rounded" alt="Étudiants en cours">
+            <img src="../assets/Images/etudiants.jpg" class="img-fluid rounded" alt="Étudiants en cours">
         </div>
     </div>
 </section>
@@ -31,8 +31,8 @@
         <div class="row mt-4">
             <div class="col-md-4">
                 <i class="fas fa-book-open fa-3x text-primary"></i>
-                <h4 class="mt-3">Catalogue de Formations</h4>
-                <p>Découvrez les différentes formations disponibles dans les universités du Sénégal.</p>
+                <h4 class="mt-3">Catalogue des établissements</h4>
+                <p>Découvrez les différents établissements d'enseignement supérieur disponibles au Sénégal.</p>
             </div>
             <div class="col-md-4">
                 <i class="fas fa-user-graduate fa-3x text-primary"></i>
@@ -50,7 +50,7 @@
 
 <!-- Section Formations -->
 <section class="container my-5">
-    <h2 class="text-center">Formations Populaires</h2>
+    <h2 class="text-center">Etablissements Populaires</h2>
     <div class="row mt-4">
         <?php
         include 'config/database.php';
