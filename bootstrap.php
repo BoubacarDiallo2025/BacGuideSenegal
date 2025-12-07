@@ -13,22 +13,18 @@ if (basename($script_dir) === 'pages') {
     $project_root = dirname($script_dir);
 }
 
-// Définir les constantes de chemins
+// Définir les constantes de chemins (une seule fois)
 if (!defined('PROJECT_ROOT')) {
     define('PROJECT_ROOT', $project_root);
-}
-if (!defined('INCLUDES_DIR')) {
     define('INCLUDES_DIR', PROJECT_ROOT . '/includes');
-}
-if (!defined('CONFIG_DIR')) {
     define('CONFIG_DIR', PROJECT_ROOT . '/config');
-}
-if (!defined('PAGES_DIR')) {
     define('PAGES_DIR', PROJECT_ROOT . '/pages');
 }
 
-// Inclure la configuration des chemins
-require_once CONFIG_DIR . '/paths.php';
+// Inclure la configuration de la base de données
+if (!function_exists('include_header')) {
+    require_once CONFIG_DIR . '/paths.php';
+}
 
 // Inclure la configuration de la base de données
 require_once CONFIG_DIR . '/database.php';
