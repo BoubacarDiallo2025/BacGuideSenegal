@@ -3,10 +3,10 @@
 session_start();
 
 // Inclusion du fichier de configuration de la base de données
-include './config/database.php';
+include '../config/database.php';
 
 // Inclusion de l'en-tête de la page (contient les balises HTML de début)
-include './includes/header.php';
+include '../includes/header.php';
 
 // Vérifie si la requête est de type POST (lorsque le formulaire est soumis)
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -55,4 +55,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
 </div>
 
-<?php include './includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

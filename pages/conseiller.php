@@ -9,8 +9,8 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'conseiller') {
 }
 
 // Inclusion des fichiers nécessaires
-include './includes/header.php';
-include './config/database.php';
+include '../includes/header.php';
+include '../config/database.php';
 
 // Récupérer le type de conseil sélectionné
 $type_conseil = isset($_GET['type_conseil']) ? $_GET['type_conseil'] : '';
@@ -90,4 +90,4 @@ $demandes_conseils = $stmt->fetchAll();
     </div>
 </div>
 
-<?php include './includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

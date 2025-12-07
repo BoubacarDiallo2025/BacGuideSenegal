@@ -9,7 +9,7 @@ if (!isset($_SESSION['user_id'])) {
 }
 
 // Inclusion du fichier d'en-tête
-include './includes/header.php';
+include '../includes/header.php';
 ?>
 
 <div class="container mt-5 d-flex justify-content-center">
@@ -33,5 +33,5 @@ include './includes/header.php';
 
 <?php
 // Inclusion du fichier de pied de page
-include './includes/footer.php';
+include '../includes/footer.php';
 ?>

@@ -1,8 +1,9 @@
 <?php
-$host = "mysql-abdoul-salam-diallo.alwaysdata.net";
-$user = "405601_guidebach";
-$pass = "Asd781209169#";
-$dbname = "abdoul-salam-diallo_guidebacheliers";
+// Charger les variables d'environnement
+$host = getenv('DB_HOST') ?: 'mysql-abdoul-salam-diallo.alwaysdata.net';
+$user = getenv('DB_USER') ?: '405601_guidebach';
+$pass = getenv('DB_PASS') ?: 'Asd781209169#';
+$dbname = getenv('DB_NAME') ?: 'abdoul-salam-diallo_guidebacheliers';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $pass);

@@ -1,6 +1,6 @@
 <?php
-include 'includes/header.php';
-include 'config/database.php'; // Connexion à la base de données
+include '../includes/header.php';
+include '../config/database.php'; // Connexion à la base de données
 
 // Vérifier la connexion à la base de données
 if (!isset($pdo)) {
@@ -118,4 +118,4 @@ $(document).ready(function() {
 });
 </script>
 
-<?php include 'includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

@@ -1,5 +1,5 @@
 <?php
-include './config/database.php';
+include '../config/database.php';
 
 $id = $_GET['id'];
 
@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $demande = $stmt->fetch(PDO::FETCH_ASSOC);
 }
 
-include './includes/header.php';
+include '../includes/header.php';
 ?>
 
 <div class="container mt-5">
@@ -36,4 +36,4 @@ include './includes/header.php';
     </form>
 </div>
 
-<?php include './includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

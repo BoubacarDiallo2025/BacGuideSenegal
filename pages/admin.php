@@ -10,8 +10,8 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'administrateur') {
 }
 
 // Inclut l'en-tête de la page (contient généralement les balises HTML de début)
-include './includes/header.php';
-include './config/database.php'; // Connexion à la base de données
+include '../includes/header.php';
+include '../config/database.php'; // Connexion à la base de données
 
 // Exemple de fonctionnalité : Afficher tous les utilisateurs sauf les administrateurs
 $sql = "SELECT * FROM utilisateurs WHERE role != 'administrateur'";

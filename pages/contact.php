@@ -1,6 +1,6 @@
 <?php
-include 'includes/header.php';
-include 'config/database.php'; // Connexion à la base de données
+include '../includes/header.php';
+include '../config/database.php'; // Connexion à la base de données
 
 // Récupérer la liste des conseillers depuis la base de données
 $sql = "SELECT nom, prenom, email FROM utilisateurs WHERE role = 'conseiller'";
@@ -78,4 +78,4 @@ $conseillers = $stmt->fetchAll();
     </div>
 </div>
 
-<?php include 'includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

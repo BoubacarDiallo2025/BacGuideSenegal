@@ -1,6 +1,6 @@
 <?php
-include './includes/header.php';
-include './config/database.php';
+include '../includes/header.php';
+include '../config/database.php';
 
 // Récupérer les établissements
 $sql = "SELECT * FROM etablissement";

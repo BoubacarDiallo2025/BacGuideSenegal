@@ -1,4 +1,4 @@
-<?php include 'includes/header.php'; ?>
+<?php include '../includes/header.php'; ?>
 
 <!-- Section Bannière -->
 <section class="hero bg-primary text-white text-center py-5">
