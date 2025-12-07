@@ -65,4 +65,4 @@ include '../includes/header.php';
     <a href="register.php" class="btn btn-outline-primary w-100">S'inscrire</a>
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include $root . '/includes/footer.php'; ?>

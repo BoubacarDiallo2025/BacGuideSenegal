@@ -3,7 +3,8 @@
 session_start();
 
 // Inclusion du fichier de connexion à la base de données
-include '../config/database.php';
+$root = dirname(__DIR__);
+include $root . '/config/database.php';
 
 // Vérification si le formulaire a été soumis via la méthode POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

@@ -1,6 +1,7 @@
 <?php 
 session_start(); // Démarrer la session pour stocker les messages d'erreur
-include "../config/database.php";
+$root = dirname(__DIR__);
+include $root . "/config/database.php";
 
 $errors = [];
 

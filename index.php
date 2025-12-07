@@ -1,6 +1,7 @@
 <?php 
 $index = true;
-include 'includes/header.php'; 
+$root = __DIR__;
+include $root . '/includes/header.php'; 
 ?>
 
 <div class="container mt-5">
@@ -26,4 +27,4 @@ include 'includes/header.php';
     </div>
 </div>
 
-<?php include 'includes/footer.php'; ?>
+<?php include $root . '/includes/footer.php'; ?>
