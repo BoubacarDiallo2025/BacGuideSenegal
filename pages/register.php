@@ -1,8 +1,8 @@
 <?php
+require_once dirname(__DIR__) . '/bootstrap.php';
 $index = false;
-include '../includes/header.php'; 
+include_header(); 
 ?>
-
 <style>
         body {
             background: linear-gradient(135deg, #e3f2fd, #90caf9);
@@ -116,4 +116,4 @@ include '../includes/header.php';
     </div>
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include_footer(); ?>

@@ -1,6 +1,7 @@
 <?php 
+require_once __DIR__ . '/bootstrap.php';
 $index = true;
-include 'includes/header.php'; 
+include_header();
 ?>
 
 <div class="container mt-5">
@@ -26,4 +27,4 @@ include 'includes/header.php';
     </div>
 </div>
 
-<?php include 'includes/footer.php'; ?>
+<?php include_footer(); ?>

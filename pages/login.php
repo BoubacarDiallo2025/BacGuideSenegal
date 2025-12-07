@@ -1,8 +1,8 @@
 <?php
+require_once dirname(__DIR__) . '/bootstrap.php';
 $index = false;
-include '../includes/header.php'; 
+include_header(); 
 ?>
-
 <style>
         body {
             display: flex;
@@ -66,4 +66,4 @@ include '../includes/header.php';
     <a href="register.php" class="btn btn-outline-primary w-100">S'inscrire</a>
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include_footer(); ?>
