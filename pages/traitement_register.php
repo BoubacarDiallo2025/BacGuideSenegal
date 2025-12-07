@@ -1,6 +1,6 @@
 <?php 
 session_start(); // Démarrer la session pour stocker les messages d'erreur
-require_once dirname(__DIR__) . '/bootstrap.php';
+include "../config/database.php";
 
 $errors = [];
 

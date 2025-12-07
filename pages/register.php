@@ -116,4 +116,4 @@ include_header();
     </div>
 </div>
 
-<?php include_footer(); ?>
+<?php include '../includes/footer.php'; ?>

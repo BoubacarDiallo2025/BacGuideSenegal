@@ -2,8 +2,8 @@
 // Démarrage de la session pour stocker les informations de l'utilisateur connecté
 session_start();
 
-// Inclusion du bootstrap
-require_once dirname(__DIR__) . '/bootstrap.php';
+// Inclusion du fichier de connexion à la base de données
+include '../config/database.php';
 
 // Vérification si le formulaire a été soumis via la méthode POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
